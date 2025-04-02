@@ -1,4 +1,4 @@
-/* ===== VARIABLES CSS ===== */
+/* variables */
 :root {
     /* Colores */
     --white: hsl(0, 0%, 100%);
@@ -11,9 +11,12 @@
     --font-size-paragraph: 15px;
     --font-weight-regular: 400;
     --font-weight-bold: 700;
-  }
   
-  /* ===== RESET Y ESTILOS GLOBALES ===== */
+    /* espaciados */
+    --mobile-padding: 1.75rem;
+}
+
+  /* reset y estilos globales*/
   * {
     margin: 0;
     padding: 0;
@@ -23,24 +26,27 @@
   body {
     background-color: var(--slate-300);
     font-family: var(--font-family);
-    
-  }
-  
-  /* ===== CONTENEDOR PRINCIPAL ===== */
-  .container {
-    padding: 1rem;
     min-height: 100vh;
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: center;
+    padding: var(--mobile-padding);
   }
   
-  /* ===== TARJETA QR ===== */
+  /* contenedor principal */
+  .container {
+    width:100%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  /* tarjeta QR */
   .qr-code {
     background-color: var(--white);
     border-radius: 1rem;
     padding: 1rem;
     max-width: 320px;
+    margin: 0 auto;
     text-align: center;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   }
