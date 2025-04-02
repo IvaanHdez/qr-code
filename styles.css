@@ -1,2 +1,66 @@
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+/* ===== VARIABLES CSS ===== */
+:root {
+    /* Colores */
+    --white: hsl(0, 0%, 100%);
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+  
+    /* Tipografía */
+    --font-family: 'Outfit', sans-serif;
+    --font-size-paragraph: 15px;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+  }
+  
+  /* ===== RESET Y ESTILOS GLOBALES ===== */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--slate-300);
+    font-family: var(--font-family);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* ===== CONTENEDOR PRINCIPAL ===== */
+  .container {
+    padding: 1rem;
+  }
+  
+  /* ===== TARJETA QR ===== */
+  .qr-card {
+    background-color: var(--white);
+    border-radius: 1rem;
+    padding: 1rem;
+    max-width: 320px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .qr-card img {
+    width: 100%;
+    border-radius: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .qr-card h1 {
+    color: var(--slate-900);
+    font-size: 1.4rem;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 1rem;
+  }
+  
+  .qr-card p {
+    color: var(--slate-500);
+    font-size: var(--font-size-paragraph);
+    font-weight: var(--font-weight-regular);
+    margin-bottom: 1.25rem;
+    padding: 0 0.75rem;
+  }
